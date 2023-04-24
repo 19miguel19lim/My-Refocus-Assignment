@@ -1,0 +1,64 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blueviolet {
+  align-self: flex-end;
+}
+
+.parent-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brown {
+  align-self: flex-start;
+}
+
+.red {
+  align-self: flex-end;
+}
+
+.black {
+  align-self: flex-start;
+}
+
+.gray {
+  align-self: flex-end;
+}
+
+.cadetblue {
+  width: 300px;
+  height: 300px;
+  background-color: cadetblue;
+}
+
+.row {
+  height: 50px;
+}
+.vacant-row {
+  height: 200px;
+}
+
+.parent-color-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.parent-color-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+}

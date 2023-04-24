@@ -1,0 +1,18 @@
+@media (min-width: 1312px) {
+  .tablet,
+  .mobile {
+    display: none;
+  }
+}
+@media (min-width: 922px) and (max-width: 1311px) {
+  .pc,
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 922px) {
+  .tablet,
+  .pc {
+    display: none;
+  }
+}
