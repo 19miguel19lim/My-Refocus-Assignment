@@ -1,0 +1,22 @@
+.main-box {
+  height: 400px;
+  width: 400px;
+  border: 1px solid #333;
+  padding: 16px;
+}
+
+.content {
+  /* height: inherit; */
+  padding-right: 38px;
+}
+
+.title {
+  margin: 10px 5px 10px 5px;
+  padding: 10px 13px 11px 12px;
+}
+
+.paragraph {
+  color: red;
+  margin: 0 16px 0 16px;
+  padding: 6px 0 6px 0;
+}
