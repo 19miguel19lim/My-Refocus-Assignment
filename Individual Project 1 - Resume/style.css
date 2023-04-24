@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(211, 197, 185, 0.35),
+      rgba(145, 135, 127, 0.35)
+    ),
+    url("img/Big-profile-pic.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* background-image: url("img/Big-profile-pic.jpg"); */
+  /* background-size: cover;
+  background-position: center; */
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+}
+
+p {
+  font-size: 16px;
+  line-height: 2.5rem;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.picture {
+  width: 20rem;
+  height: 20rem;
+
+  background-image: url("img/small-profile-pic.jpg");
+  background-size: cover;
+
+  border: 1rem solid #70c8d8;
+  border-radius: 100rem;
+  position: absolute;
+  position: fixed;
+  top: 10rem;
+  left: 4rem;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  height: 100%;
+  background-color: #222;
+  display: block;
+  grid-row: 1 / -3;
+
+  position: relative;
+}
+
+.name h1 {
+  font-size: 30px;
+  color: #fff;
+
+  position: absolute;
+  position: fixed;
+
+  left: 18px;
+  top: 35rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1.5rem;
+  position: absolute;
+  position: fixed;
+  left: 60px;
+  top: 40rem;
+}
+
+.social-media .logo {
+  font-size: 20px;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.float {
+  position: absolute;
+  color: #fff;
+  top: 40rem;
+  left: 30rem;
+}
+
+.float h1 {
+  margin-bottom: 2rem;
+}
+
+.float h2 {
+  color: #70c8d8;
+}
+
+.about-section {
+  background-color: #fff;
+
+  padding: 10rem 4rem 4rem 4rem;
+  width: 100%;
+  display: grid;
+}
+
+.profile-pic-small {
+  width: 40rem;
+  height: 40rem;
+}
+
+.about-word {
+  width: 6rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #70c8d8;
+}
+
+.about-p {
+  margin-bottom: 4rem;
+  line-height: 1.5;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+.details-about {
+  display: grid;
+  grid-template-rows: 6rem 10rem 1fr 1fr;
+}
+
+.information-list {
+  display: flex;
+  gap: 2rem;
+  line-height: 2;
+  margin-bottom: 4rem;
+}
+
+ul {
+  font-size: 14px;
+  list-style: none;
+}
+
+.skills-word {
+  width: 6rem;
+  margin-bottom: 4rem;
+  padding: 10rem 0 1rem 0;
+  border-bottom: 5px solid #70c8d8;
+}
+
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  margin-bottom: 16rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-logo {
+  font-size: 20rem;
+  justify-self: center;
+}
+
+.box {
+  border: 1px solid box#999494;
+  box-shadow: 10px 10px 5px #dddada;
+  padding: 6rem;
+}
+
+.resume-word {
+  width: 6rem;
+  margin-bottom: 4rem;
+  padding: 10rem 0 1rem;
+  border-bottom: 5px solid #70c8d8;
+}
+
+.small-description {
+  margin-bottom: 2rem;
+}
+
+.sumary {
+  display: grid;
+  width: 50%;
+}
+
+.sumary h2,
+.personal {
+  margin-bottom: 2rem;
+}
+
+.personal,
+.education {
+  padding-left: 2rem;
+  border-left: 4px solid #70c8d8;
+}
+
+.personal-sumary {
+  margin-bottom: 2rem;
+}
+
+.sumary ul {
+  line-height: 3rem;
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.date {
+  margin-bottom: 1rem;
+  background-color: #70c8d8;
+  width: fit-content;
+  padding: 0.5rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  font-size: 2rem;
+  gap: 4rem;
+
+  position: absolute;
+  position: fixed;
+  top: 50rem;
+  left: 4rem;
+}
+
+.buttons-alpha {
+  text-decoration: none;
+}
+
+.buttons p:hover,
+.buttons p :active {
+  color: #70c8d8;
+}
+
+a:hover,
+a:active {
+  color: #70c8d8;
+}
