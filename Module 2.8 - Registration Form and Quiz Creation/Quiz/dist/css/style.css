@@ -1,0 +1,8 @@
+.container {
+  background-color: #e3e9df;
+  width: 40%;
+}
+
+.hidden {
+  display: none;
+}

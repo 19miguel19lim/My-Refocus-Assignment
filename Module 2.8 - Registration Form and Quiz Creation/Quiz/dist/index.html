@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/dist/css/style.css" />
+
+    <title>Refocus Quiz</title>
+  </head>
+  <body>
+    <form class="container" name="quiz">
+      <h1 class="text-center pt-5 mb-2">Refocus Quiz</h1>
+
+      <!-- first question -->
+      <div class="question1 form-group mb- alert">
+        <label>1. What is the capital of the Philippines?</label>
+        <input
+          type="text"
+          class="form-control findX"
+          placeholder="type your answer here"
+        />
+        <div class="invalid-feedback">Wrong Answer!</div>
+        <small class="form-text text-success hidden correct">Correct!</small>
+      </div>
+
+      <!-- second question -->
+      <div class="form-group question2 alert">
+        <label class="form-label"
+          >2. What is the value of X in this equation: x=3+2x5</label
+        >
+        <div class="form-check mb-2 option1 alert">
+          <input
+            type="radio"
+            class="form-check-input opt1"
+            name="findX"
+            id="findX1"
+          />
+          <label for="findX1" class="form-check-label">X = 25</label>
+          <small class="form-text text-danger hidden correct1"
+            >Wrong Answer!</small
+          >
+        </div>
+        <div class="form-check mb-2 option2 alert">
+          <input
+            type="radio"
+            class="form-check-input opt2"
+            name="findX"
+            id="findX2"
+          />
+          <label for="findX2" class="form-check-label">X = 13</label>
+          <small class="form-text text-success hidden correct2">Correct!</small>
+        </div>
+        <div class="form-check mb-1 option3 alert">
+          <input
+            type="radio"
+            class="form-check-input opt3"
+            name="findX"
+            id="findX3"
+          />
+          <label for="findX3" class="form-check-label">X = 18</label>
+          <small class="form-text text-danger hidden correct3"
+            >Wrong Answer!</small
+          >
+        </div>
+        <div class="invalid-feedback">Wrong answer</div>
+      </div>
+
+      <!-- third question -->
+      <div class="form-group question3 alert">
+        <label class="form-label"
+          >3. Which of the following birds can fly? Choose 3 correct
+          answers</label
+        >
+        <div class="form-check mb-2">
+          <input
+            type="checkbox"
+            class="form-check-input parrot"
+            value=""
+            id="option1"
+          />
+          <label for="option1" class="form-check-label"> Parrot </label>
+        </div>
+        <div class="form-check mb-2">
+          <input
+            type="checkbox"
+            class="form-check-input eagle"
+            value=""
+            id="option2"
+          />
+          <label for="option2" class="form-check-label"> Eagle </label>
+        </div>
+        <div class="form-check mb-2">
+          <input
+            type="checkbox"
+            class="form-check-input penguin"
+            value=""
+            id="option3"
+          />
+          <label for="option3" class="form-check-label"> Penguin </label>
+        </div>
+        <div class="form-check mb-2">
+          <input
+            type="checkbox"
+            class="form-check-input crow"
+            value=""
+            id="option4"
+          />
+          <label for="option4" class="form-check-label"> Crow </label>
+        </div>
+        <small class="form-text text-success hidden lastQuestion"
+            >Correct!</small
+            
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-flex justify-contect-center gap-3 mt-5">
+        <button
+          class="reset_btn btn btn-secondary btn-lg mb-5 col"
+          type="reset"
+          value="reset"
+        >
+          Reset
+        </button>
+
+        <button
+          class="submit-btn btn btn-primary btn-lg mb-5 col"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/dist/script.js"></script>
+  </body>
+</html>

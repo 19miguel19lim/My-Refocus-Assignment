@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/dist/css/style.css" />
+
+    <title>Refocus Vaccination Form</title>
+  </head>
+
+  <!-- Start here -->
+  <body>
+    <form class="container vaccination_form" name="vaccination">
+      <h1 class="text-center mt-5 mb-5">Refocus Vaccination Form</h1>
+
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="First-Name">First name</label>
+        <input
+          type="text"
+          class="first_name form-control"
+          placeholder="Enter first name"
+          name="first__name"
+        />
+        <div class="invalid-feedback">Please fill in your first name</div>
+      </div>
+
+      <!-- Middle Name -->
+      <div class="form-group">
+        <label for="Last-Name">Middle name</label>
+        <input
+          type="text"
+          class="middle_name form-control"
+          placeholder="Enter middle name"
+          name="middle__name"
+        />
+        <div class="invalid-feedback">Please fill in your middle name</div>
+      </div>
+
+      <!-- Last Name -->
+      <div class="form-group">
+        <label for="First-Name">Last name</label>
+        <input
+          type="text"
+          class="last_name form-control"
+          placeholder="Enter last name"
+          name="last__name"
+        />
+        <div class="invalid-feedback">Please fill in your last name</div>
+      </div>
+
+      <!-- Date of birth -->
+      <div class="form-group">
+        <label for="Month">Date of Birth</label>
+        <div class="row">
+          <div class="col">
+            <input
+              type="date"
+              class="date_of_birth form-control"
+              placeholder="Month"
+              name="date_of__birth"
+            />
+            <div class="invalid-feedback">Choose your date of birth</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input
+          type="text"
+          class="email form-control"
+          placeholder="Enter Email"
+          name="email"
+        />
+        <div class="invalid-feedback">Please fill in correct email address</div>
+      </div>
+
+      <!-- Region -->
+
+      <select name="region" class="region form-select mt-4 mb-3">
+        <div class="form-select" aria-labelledby="Default select example">
+          <option selected disabled value="">Choose Your Region...</option>
+          <option value="Region I-Ilocos Region" class="dropdown-item">
+            Region I-Ilocos Region
+          </option>
+          <option value="Region II-Cagayan Valley" class="dropdown-item">
+            Region II-Cagayan Valley
+          </option>
+          <option value="Region III-Central Luzon" class="dropdown-item">
+            Region III-Central Luzon
+          </option>
+          <option value="Region IV-A-CALABARZON" class="dropdown-item">
+            Region IV-A-CALABARZON
+          </option>
+          <option value=">MIMAROPA Region" class="dropdown-item">
+            MIMAROPA Region
+          </option>
+          <option value="Region V-Bicol Region" class="dropdown-item">
+            Region V-Bicol Region
+          </option>
+          <option value="Region VI-Western Visayas" class="dropdown-item">
+            Region VI-Western Visayas
+          </option>
+          <option value="Region VII-Central Visayas" class="dropdown-item">
+            Region VII-Central Visayas
+          </option>
+          <option value="Region VIII-Eastern Visayas" class="dropdown-item">
+            Region VIII-Eastern Visayas
+          </option>
+          <option value="Region IX-Zamboanga Peninsula" class="dropdown-item">
+            Region IX-Zamboanga Peninsula
+          </option>
+          <option value="Region X-Northern Mindanao" class="dropdown-item">
+            Region X-Northern Mindanao
+          </option>
+          <option value="Region XI-Davao Region" class="dropdown-item">
+            Region XI-Davao Region
+          </option>
+          <option value="Region XII-SOCCSKSARGEN" class="dropdown-item">
+            Region XII-SOCCSKSARGEN
+          </option>
+          <option value=">Region XIII-Caraga" class="dropdown-item">
+            Region XIII-Caraga
+          </option>
+          <option value="NCR-National Capital Region" class="dropdown-item">
+            NCR-National Capital Region
+          </option>
+          <option
+            value="CAR-Cordillera Administrative Region"
+            class="dropdown-item"
+          >
+            CAR-Cordillera Administrative Region
+          </option>
+          <option
+            value="BARMM-Bangsamoro Autonomous Region in Muslim Mindanao"
+            class="dropdown-item"
+          >
+            BARMM-Bangsamoro Autonomous Region in Muslim Mindanao
+          </option>
+        </div>
+        <div class="blurred"></div>
+      </select>
+
+      <!-- Province -->
+      <div class="form-group">
+        <label for="Province">Province</label>
+        <input
+          type="text"
+          class="province form-control"
+          placeholder="Enter your Province"
+          name="province"
+        />
+        <div class="invalid-feedback">Please fill in your province</div>
+      </div>
+
+      <!-- Barangay -->
+      <div class="form-group">
+        <label for="Barangay">Barangay</label>
+        <input
+          type="text"
+          class="barangay form-control"
+          placeholder="Enter your Barangay"
+          name="barangay"
+        />
+        <div class="invalid-feedback">Please fill in your barangay</div>
+      </div>
+
+      <!-- Street -->
+      <div class="form-group">
+        <label for="Street">Street</label>
+        <input
+          type="text"
+          class="street form-control"
+          placeholder="Enter your Street"
+          name="street"
+        />
+        <div class="invalid-feedback">Please fill in your street</div>
+      </div>
+
+      <!-- Gender -->
+      <div class="mt-4 mb-4">
+        <label class="mr-4" for="Gender">Choose Your Gender</label>
+        <div class="form-check form-check-inline">
+          <input
+            class="gender male form-check-input"
+            type="radio"
+            name="genderSelection"
+            id="male"
+            value="male"
+            checked
+          />
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="gender female form-check-input"
+            type="radio"
+            name="genderSelection"
+            id="female"
+            value="female"
+          />
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="gender other form-check-input"
+            type="radio"
+            name="genderSelection"
+            id="other"
+            value="other"
+          />
+          <label class="form-check-label" for="other">Other </label>
+        </div>
+      </div>
+      <div>
+        <p class="message hidden">Please choose your gender</p>
+      </div>
+
+      <!-- Region -->
+      <select
+        name="vaccinationBrandD1"
+        class="vaccinationBrandD1 form-select mt-4 mb-3"
+      >
+        <div class="form-select" aria-labelledby="Default select example">
+          <option selected disabled value="">
+            Choose Your Vaccination Brand (Dose 1)
+          </option>
+          <option value="Pfizer BioNTech" class="dropdown-item">
+            Pfizer BioNTech
+          </option>
+          <option value="AstraZeneca" class="dropdown-item">AstraZeneca</option>
+          <option value="Coronavac" class="dropdown-item">Coronavac</option>
+          <option value="Sputnik V" class="dropdown-item">Sputnik V</option>
+          <option value=">Janssen" class="dropdown-item">Janssen</option>
+          <option value="Covaxin" class="dropdown-item">Covaxin</option>
+          <option value="Moderna" class="dropdown-item">Moderna</option>
+          <option value="Sinopharm" class="dropdown-item">Sinopharm</option>
+          <option value="Covovax" class="dropdown-item">Covovax</option>
+        </div>
+      </select>
+
+      <!-- Date of Vaccination (Dose 1) -->
+      <div class="form-group">
+        <label for="Month">Date of Vaccination (Dose 1)</label>
+        <div class="row">
+          <div class="col">
+            <input
+              type="date"
+              class="vaccination_date1 form-control"
+              name="date_of__vaccination"
+            />
+            <div class="invalid-feedback">
+              Choose your vaccination date for dose 1
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vaccination Site (1) -->
+      <div class="form-group">
+        <label for="Vaccination-site">Vaccination (Dose 1) Site</label>
+        <input
+          type="text"
+          class="vaccination_site1 form-control"
+          placeholder="Vaccination (Dose 1) Site"
+          name="vaccination_site1"
+        />
+        <div class="invalid-feedback">
+          Place the location site of your first vaccination
+        </div>
+      </div>
+
+      <!-- Vaccination (2) -->
+      <div class="mt-4 mb-4">
+        <label class="mr-4" for="Gender"
+          >Did you already get your second vaccination?</label
+        >
+        <div class="form-check form-check-inline">
+          <input
+            class="yes form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            value="yes"
+          />
+          <label class="form-check-label" for="inlineRadio1">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="no form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            value="no"
+            checked
+          />
+          <label class="form-check-label" for="inlineRadio2">No</label>
+        </div>
+      </div>
+
+      <!-- Vaccination Brand (2) read-only -->
+      <select
+        name="vaccinationBrandD2"
+        class="vaccinationBrandD2 form-select mt-4 mb-3"
+        disabled
+      >
+        <div class="form-select" aria-labelledby="Default select example">
+          <option selected disabled value="">
+            Choose Your Vaccination Brand (Dose 2)
+          </option>
+          <option value="Pfizer BioNTech" class="dropdown-item">
+            Pfizer BioNTech
+          </option>
+          <option value="AstraZeneca" class="dropdown-item">AstraZeneca</option>
+          <option value="Coronavac" class="dropdown-item">Coronavac</option>
+          <option value="Sputnik V" class="dropdown-item">Sputnik V</option>
+          <option value=">Janssen" class="dropdown-item">Janssen</option>
+          <option value="Covaxin" class="dropdown-item">Covaxin</option>
+          <option value="Moderna" class="dropdown-item">Moderna</option>
+          <option value="Sinopharm" class="dropdown-item">Sinopharm</option>
+          <option value="Covovax" class="dropdown-item">Covovax</option>
+        </div>
+      </select>
+
+      <!-- Date of Vaccination 2 -->
+      <div class="form-group">
+        <label for="Month">Date of Vaccination (Dose 2)</label>
+        <div class="row">
+          <div class="col">
+            <input
+              type="date"
+              class="form-control date_of__vaccination2"
+              name="date_of__vaccination2"
+              disabled
+            />
+            <div class="invalid-feedback">
+              Choose your vaccination date for dose 2
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vaccination site 2 -->
+      <div class="form-group">
+        <label for="Vaccination-site">Vaccination (Dose 2) Site</label>
+        <input
+          type="text"
+          class="form-control vaccinationSite2"
+          placeholder="Vaccination (Dose 1) Site"
+          name="vaccinationSite2"
+          disabled
+        />
+      </div>
+
+      <div class="d-flex justify-contect-center gap-3 mt-5">
+        <button
+          class="reset_btn btn btn-secondary btn-lg mb-5 col"
+          type="reset"
+          value="reset"
+        >
+          Reset
+        </button>
+
+        <button
+          class="submit-btn btn btn-primary btn-lg mb-5 col"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+
+      <!-- Popout -->
+      <div
+        class="summary-popup container position-absolute top-50 start-50 translate-middle hidden"
+      >
+        <header class="container mb-2 mt-3">
+          <h2 class="text-center pb-3 mt-3 mb-3">SUMMARY</h2>
+        </header>
+        <div class="pl-3">
+          <p class="first__name font-weight-bold"></p>
+          <p class="middle__name font-weight-bold"></p>
+          <p class="last__name font-weight-bold last__name"></p>
+          <p class="dob font-weight-bold"></p>
+          <p class="email_ font-weight-bold first__Name"></p>
+          <p class="region_ font-weight-bold first__Name"></p>
+          <p class="province_ font-weight-bold first__Name"></p>
+          <p class="barangay_ font-weight-bold first__Name"></p>
+          <p class="street_ font-weight-bold first__Name"></p>
+          <p class="gender_ font-weight-bold"></p>
+          <p class="VacD1 font-weight-bold"></p>
+          <p class="VacDateD1 font-weight-bold"></p>
+          <p class="VacSiteD1 font-weight-bold"></p>
+          <p class="VacD2 font-weight-bold"></p>
+          <p class="VacDateD2 font-weight-bold"></p>
+          <p class="VacSiteD2 font-weight-bold"></p>
+        </div>
+        <div class="mb-2">
+          <h3 class="text-center pt-3 pb-3">You're all good!</h3>
+        </div>
+      </div>
+    </form>
+    <div class="overlay hidden"></div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/dist/script.js"></script>
+    <script>
+      // Get the current year
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
