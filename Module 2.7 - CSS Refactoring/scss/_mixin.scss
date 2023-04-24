@@ -1,0 +1,8 @@
+@mixin shape {
+  width: 0;
+  height: 0;
+}
+
+@mixin border_radius {
+  border-radius: 50%;
+}
