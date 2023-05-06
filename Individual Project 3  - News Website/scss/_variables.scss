@@ -1,0 +1,25 @@
+$light: #ffffff;
+$light_1: #f8f9fc;
+$light_2: #c0bfcf;
+$light_3: #9d9db5;
+$background: #192140;
+$black: #10131c;
+$mint: #d7f8ff;
+$accent: #dcf10d;
+$hover: #0266ff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: inter;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@mixin transition-ease {
+  transition: all 0.3s ease-in-out;
+}

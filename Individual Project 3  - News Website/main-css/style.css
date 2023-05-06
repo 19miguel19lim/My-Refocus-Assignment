@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: inter;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bg {
+  width: 1000%;
+  height: 84px;
+  background-color: #192140;
+  position: fixed;
+  z-index: 99;
+}
+
+.container {
+  width: 1200px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+}
+.container .navigation {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding-top: 30px;
+  z-index: 100;
+}
+.container .navigation .refocus-logo {
+  padding-left: 80px;
+}
+.container .navigation .menu-burger__icon {
+  opacity: 0;
+}
+.container .navigation .options {
+  display: flex;
+  gap: 4rem;
+  padding-right: 80px;
+}
+.container .navigation .options .nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.container .navigation .options .nav-list a {
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.container .navigation .options .nav-list .nav-item:hover {
+  color: #dcf10d;
+  text-decoration: underline;
+}
+.container .navigation .options .nav-list .log-in {
+  border: 1px solid #0266ff;
+  padding: 10px 16px;
+  border-radius: 20px;
+  color: #0266ff;
+}
+.container .navigation .options .nav-list .log-in:hover {
+  border: 1px solid #dcf10d;
+  color: #dcf10d;
+  text-decoration: none;
+}
+
+.card-container {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+  gap: 40px;
+  padding: 60px 80px 0 80px;
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 320px;
+  height: 300px;
+  margin-bottom: 2rem;
+  padding: 1px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card .read {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to right, rgba(157, 157, 181, 0.5), rgba(157, 157, 181, 0.2));
+  justify-content: end;
+}
+.card .read-icon {
+  font-size: 36px;
+  margin: 2rem 2rem 0 0;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .overlay {
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(157, 157, 181, 0.5), rgba(157, 157, 181, 0.2));
+}
+.card:hover .popup {
+  width: 99.5%;
+  height: 10%;
+  top: 41%;
+  z-index: 2;
+  position: absolute;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover .popup .popup-status__check:hover {
+  background: #c0bfcf;
+}
+.card:hover .popup .popup-status__cancel:hover {
+  background: #9d9db5;
+}
+.card:hover .popup ion-icon {
+  display: inline;
+}
+.card:hover .popup ion-icon:hover {
+  color: #0266ff;
+}
+.card .card-img {
+  height: 50%;
+}
+.card .popup {
+  display: none;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card .popup-status {
+  display: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .popup ion-icon {
+  display: none;
+  font-size: 22px;
+}
+.card .card-img1 {
+  border-radius: 10px 10px 0 0;
+}
+.card .card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px 20px;
+  gap: 20px;
+  background-color: #f8f9fc;
+}
+.card .card-text h2 {
+  font-size: 18px;
+  border-bottom: 1px solid #9d9db5;
+  font-weight: 700;
+  height: 74px;
+  text-justify: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.card .card-text p {
+  font-size: 12px;
+}
+.card .card-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-details .card-date {
+  border: 1px solid #9d9db5;
+  border-radius: 20px;
+  padding: 4px 14px;
+  color: #9d9db5;
+}
+.card .card-details .card-status {
+  padding: 5px 20px;
+  color: #9d9db5;
+  display: flex;
+  gap: 0.25rem;
+}
+.card .card-details ion-icon {
+  padding-right: 0.1rem;
+  font-size: 18px;
+}
+.card .card-details ion-icon:hover {
+  font-size: 19px;
+}
+
+.footer {
+  position: relative;
+}
+.footer .bg-footer {
+  width: 1000%;
+  height: 274px;
+  position: absolute;
+  background-color: #10131c;
+  z-index: -5;
+}
+.footer h3 {
+  font-weight: 400;
+}
+.footer h3,
+.footer p {
+  color: #ffffff;
+}
+.footer .footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  z-index: -4;
+}
+.footer .footer-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-top: 1rem;
+}
+.footer .footer-list .footer-item {
+  font-size: 12px;
+}
+.footer .footer-list .footer-item:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #0266ff;
+}
+.footer .footer-list ion-icon {
+  font-size: 22px;
+}
+.footer .icons {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.footer .icons:hover {
+  color: #0266ff;
+  cursor: pointer;
+}
+.footer .policy {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.footer .policy p {
+  color: #9d9db5;
+}
+
+.footer-height {
+  height: 137px;
+  padding-left: 80px;
+}
+
+.footer-padding-top {
+  padding-top: 60px;
+}
+
+.footer-padding-top1 {
+  padding-top: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (width <= 414px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .card-container {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .refocus-logo {
+    position: absolute;
+    left: -50px;
+    top: 30px;
+  }
+  .menu-burger {
+    position: absolute;
+    top: 28px;
+    left: 300px;
+  }
+  .menu-burger__icon {
+    opacity: 1 !important;
+    font-size: 32px;
+    color: #ffffff;
+  }
+  .menu-burger__icon:hover {
+    cursor: pointer;
+    color: #0266ff;
+  }
+  .nav-items {
+    display: none;
+  }
+  .footer .bg-footer {
+    position: absolute;
+    height: 650px;
+  }
+  .footer .blog {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .footer .blog .footer-list {
+    flex-direction: column;
+  }
+  .footer .follow-us {
+    margin-bottom: 4rem;
+  }
+  .footer .our-courses {
+    margin-bottom: 4rem;
+  }
+  .footer .policy {
+    justify-content: start;
+    padding-top: 20px;
+  }
+  .footer .footer-content {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+  .footer .footer-padding-top {
+    padding-top: 20px;
+  }
+  .footer .footer-height {
+    height: auto;
+    padding-left: 40px;
+  }
+}
+.active {
+  color: #ef3b51;
+}/*# sourceMappingURL=style.css.map */
